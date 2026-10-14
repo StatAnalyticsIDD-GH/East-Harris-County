@@ -202,11 +202,9 @@ ul.task-list li input[type="checkbox"] {
 .report-download { margin: 0.2rem 0 0.5rem 0; font-weight: 600; }
 .report-date { color: #555; font-size: 0.9rem; }
 
-/* Credits: partner logos in a row, then the attribution text. */
-.credit-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 2.2rem; margin: 0.4rem 0 1rem 0; }
-.credit-logo { display: inline-flex; align-items: center; gap: 0.6rem; }
-.credit-logo img { height: 56px !important; width: auto !important; display: inline-block !important; }
-.credit-name { font-weight: 700; color: #1a3a8f; font-size: 1.05rem; }
+/* Credits: one image with the three partner logos side by side. */
+.credit-logos { margin: 0.4rem 0 1rem 0; }
+.credit-logos img { display: inline-block !important; width: 100% !important; max-width: 760px !important; height: auto !important; }
 .credits-body { max-width: 62rem; font-size: 0.92rem; }
 .credits-body p { margin-bottom: 0.6rem; line-height: 1.5; }
 </style>
@@ -404,16 +402,14 @@ About this project
 <div class="card-body html-fill-item html-fill-container">
 <div class="credits-body html-fill-item html-fill-container">
 <div class="credit-logos html-fill-item html-fill-container">
-  <span class="credit-logo"><img src="figures/logos/statanalytics_idd.png" alt="StatAnalytics IDD, LLC logo"><span class="credit-name">StatAnalytics IDD, LLC</span></span>
-  <span class="credit-logo"><img src="figures/logos/edf.png" alt="Environmental Defense Fund logo"></span>
-  <span class="credit-logo"><img src="figures/logos/hhd.png" alt="Houston Health Department logo"></span>
+  <img src="figures/logos/partner_logos.png" alt="Logos: StatAnalytics IDD, LLC; Environmental Defense Fund; Houston Health Department">
 </div>
 
 <p><strong>Houston CHATTER</strong> (Community Health Air Toxics Tracking &amp; Environmental Report) was developed by <strong>StatAnalytics IDD, LLC</strong> in collaboration with <strong>Environmental Defense Fund (EDF)</strong> and the <strong>Houston Health Department (HHD)</strong>, with support from grant funding.</p>
-<p><strong>Data sources.</strong> Texas Commission on Environmental Quality (TCEQ) AutoGC monitors; U.S. EPA Air Quality System (AQS) and EPA Air Quality Design Values; screening levels from EPA Regional Screening Levels (RSLs); health effects from EPA’s Integrated Risk Information System (IRIS). Full citations are on the <a href="https://statanalyticsidd-gh.github.io/East-Houston/index_methods.html">Data, Methods &amp; FAQ</a> page of the website.</p>
+<p><strong>Data sources.</strong> Texas Commission on Environmental Quality (TCEQ) AutoGC monitors; U.S. EPA Air Quality System (AQS) and EPA Air Quality Design Values; screening levels from EPA Regional Screening Levels (RSLs); health effects from EPA’s Integrated Risk Information System (IRIS). Full citations are on the <a href="https://statanalyticsidd-gh.github.io/Houston/index_methods.html">Data, Methods &amp; FAQ</a> page of the website.</p>
 <p><strong>Disclaimer.</strong> CHATTER values are screening comparisons for public information. They are not regulatory determinations, and exceeding a screening level or standard does not by itself mean that health effects will occur.</p>
 <p><strong>License.</strong> © 2026 StatAnalytics IDD, LLC. Content on this site and in the CHATTER report is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</a>: you may share and adapt it with credit, but not for commercial purposes. For other uses, contact StatAnalytics IDD, LLC. The monitor map (courtesy of the Houston Health Department), the embedded EDF Air Tracker (© Environmental Defense Fund) and the partner logos are not covered by this license.</p>
-<p><strong>Suggested citation.</strong> StatAnalytics IDD, LLC, Environmental Defense Fund, and Houston Health Department (2026). <em>Houston CHATTER: Community Health Air Toxics Tracking &amp; Environmental Report.</em> https://statanalyticsidd-gh.github.io/East-Houston/</p>
+<p><strong>Suggested citation.</strong> StatAnalytics IDD, LLC, Environmental Defense Fund, and Houston Health Department (2026). <em>Houston CHATTER: Community Health Air Toxics Tracking &amp; Environmental Report.</em> https://statanalyticsidd-gh.github.io/Houston/</p>
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -501,7 +497,7 @@ About this project
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/statanalyticsidd-gh\.github\.io\/East-Houston\/");
+        var filterRegex = new RegExp("https:\/\/statanalyticsidd-gh\.github\.io\/Houston\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
