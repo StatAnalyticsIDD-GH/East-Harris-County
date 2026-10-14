@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CHATTER: Community Health Air Tracker – EDF CHATTER</title>
+<title>CHATTER: Community Health Air Toxics Tracking &amp; Environmental Report – Houston CHATTER</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">EDF CHATTER</span>
+    <span class="navbar-title">Houston CHATTER</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -104,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">East Houston</span></a>
+<span class="menu-text">Introduction to the Tool</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index_bg1_location.html"> 
@@ -132,11 +132,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index_methods.html"> 
-<span class="menu-text">Data &amp; Methods</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./index_faq.html"> 
-<span class="menu-text">FAQ</span></a>
+<span class="menu-text">Data, Methods &amp; FAQ</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -156,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
 
 
       <div class="navbar-title">
-        <div class="navbar-title-text"><a href="#">CHATTER: Community Health Air Tracker</a></div>
+        <div class="navbar-title-text"><a href="#">CHATTER: Community Health Air Toxics Tracking &amp; Environmental Report</a></div>
         
         
       </div>
@@ -202,17 +198,24 @@ ul.task-list li input[type="checkbox"] {
 /* Narrow text card beside each summary heatmap (### Column {width=22%}). */
 .side-text .card-body { font-size: 0.9rem; line-height: 1.4; padding: 0.6rem 0.8rem !important; }
 .side-text p { margin-bottom: 0.6rem; }
+/* PDF report download button at the top of the page. */
+.report-download { margin: 0.2rem 0 0.5rem 0; font-weight: 600; }
+.report-date { color: #555; font-size: 0.9rem; }
 </style>
 <div class="bslib-grid-item html-fill-item bslib-grid" data-layout="flow" style="display: grid; grid-template-rows: minmax(3em, max-content) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card bslib-card html-fill-container" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
+<!-- Report download: _text/report_download.md is written by ./make_report.sh
+     (run it before `quarto render`); it links
+     downloads/CHATTER_HOUSTON_REPORT_<date>.pdf. -->
+<p><a href="downloads/CHATTER_HOUSTON_REPORT_Oct2026.pdf" class="btn btn-primary report-download" download="CHATTER_HOUSTON_REPORT_Oct2026.pdf">Download the CHATTER report (PDF)</a> &nbsp; <span class="report-date">Website and report last updated October 13, 2026.</span></p>
 <details>
 <summary>
 <strong>About CHATTER</strong> (click to expand)
 </summary>
-<p>CHATTER is a tool that shows how air pollution levels change over time and what those changes could mean for people’s health in the East Houston communities along the Houston Ship Channel, from the East End to Baytown. This East Houston edition follows all <strong>fourteen</strong> hourly air-toxics (AutoGC) monitors in Harris County that report to the Texas Commission on Environmental Quality. To keep the figures readable, the monitors are grouped into the six <strong>sections</strong> drawn on the monitor map — East End; Galena Park / Pasadena; Jacinto City / Cloverleaf; Channelview / Lynchburg; Deer Park; and Baytown — and every figure on this page is one section, with its monitors side by side. While air pollution affects everyone, communities nearer industrial sources experience higher levels of hazardous air pollutants and the associated human health risk than those that are not.</p>
+<p>CHATTER — the Community Health Air Toxics Tracking &amp; Environmental Report — is a tool that shows how air pollution levels change over time and what those changes could mean for people’s health in the East Houston communities along the Houston Ship Channel, from the East End to Baytown. This East Houston edition follows all <strong>fourteen</strong> hourly air-toxics (AutoGC) monitors in Harris County that report to the Texas Commission on Environmental Quality. To keep the figures readable, the monitors are grouped into the six <strong>sections</strong> drawn on the monitor map — East End; Galena Park / Pasadena; Jacinto City / Cloverleaf; Channelview / Lynchburg; Deer Park; and Baytown — and the figures on this page list the monitors section by section. While air pollution affects everyone, communities nearer industrial sources experience higher levels of hazardous air pollutants and the associated human health risk than those that are not.</p>
 <p>CHATTER helps determine whether air pollution levels measured at local monitors may be high enough to affect human health and whether additional action may be needed to reduce exposures. <strong>Screening levels</strong> are air pollution concentrations or thresholds that scientists use to identify when long-term exposure may increase the risk of health problems. Exceeding a screening level does not mean health effects will occur, it indicates a need to take additional steps like verifying measurements or taking pollution reduction actions to protect health.</p>
 <p>The health risks CHATTER show apply to a resident living in the area breathing air pollution for a long time.</p>
 <p>CHATTER displays three groups of air pollutants that are monitored at the East Houston sites:</p>
@@ -223,17 +226,17 @@ grid-auto-rows: minmax(0, 1fr);">
 </ol>
 <p>The first two groups are of greater concern to communities living near industrial areas, where hazardous air pollutants are released. The third group consists of widespread pollutants found throughout the United States.</p>
 <p>A reference map is included indicating the locations of the monitors and the boundaries of the six sections. Figures in CHATTER reports are based on air monitoring data from these locations. If you are interested in better understanding potential sources of air pollution at these locations, visit <a href="./index_air_tracker.html">EDF’s AirTracker tool</a>.</p>
-<p>For more on definitions or how air monitors work, what a screening level is, how EPA sets them, and which statistics CHATTER uses, see the <a href="./index_faq.html">Frequently Asked Questions</a>. Where the data come from, how each number is calculated, and a downloadable file of every value on this site are on the <a href="./index_methods.html">Data &amp; Methods</a> tab.</p>
+<p>For more on definitions or how air monitors work, what a screening level is, how EPA sets them, and which statistics CHATTER uses, see the Frequently Asked Questions on the <a href="./index_methods.html">Data, Methods &amp; FAQ</a> page, which also says where the data come from, how each number is calculated, and offers a downloadable file of every value on this site.</p>
 </details>
 <details>
 <summary>
 <strong>How to read the plots on this page</strong> (click to expand)
 </summary>
 <p>The figures below are <strong>heat maps</strong>. On this page each figure covers the whole area at once: each <strong>row</strong> is one of the fourteen monitors, grouped into the six sections of the map, and each <strong>column</strong> is a period of time, and the number in each square is the level measured at the location divided by the health-based limit, written as a multiple with an “x.” <strong>1.0x</strong> means the level sits exactly at the limit; <strong>0.5x</strong> is half the limit; <strong>3.0x</strong> is three times the limit. The color legend beside each plot shows what those multiples mean. The darker the color the greater the value. A number followed by an <strong>asterisk</strong> (for example <strong>1.72x*</strong>) rests on thinner data: between 60% and 75% of the possible hourly readings for that period were available. Periods with less than 60% are left blank rather than shown.</p>
-<p><strong>Cancer Risk Pollutants</strong> shows each monitor’s combined cancer total — its two cancer risk pollutants, each compared against its Screening Level and then added together. For example, Galena Park’s 2024 total reads <strong>13.86x</strong>, which falls in the <strong>10x (caution, action may be necessary)</strong> band; on the Cancer Risk by Location tab that splits into 1,3-butadiene at <strong>6.11x</strong> and benzene making up the rest.</p>
+<p><strong>Cancer Risk Pollutants</strong> shows each monitor’s combined cancer total — its two cancer risk pollutants, each compared against its Screening Level and then added together. For example, Galena Park’s 2024 total reads <strong>13.86x</strong>, which falls in the <strong>10x (caution, action may be necessary)</strong> band; on the Cancer Risk by Location page that splits into 1,3-butadiene at <strong>6.11x</strong> and benzene making up the rest.</p>
 <p><strong>Other Health Risk Pollutants</strong> shows each monitor’s total across all thirteen of those pollutants. Most values here sit well below <strong>1.0x</strong> and appear in the palest shade; the exception to watch is Houston Milby Park (East End), where 1,3-butadiene alone pushes the total past the screening level in several periods — the only monitor where that happens.</p>
 <p><strong>EPA Criteria Pollutants</strong> works differently: it compares the <strong>EPA design value</strong> against the National Ambient Air Quality Standard rather than a screening level, and it covers the eleven regulatory monitors within the area of the monitor map. A <strong>design value</strong> is a number calculated from air monitoring data that represents pollution levels in an area and is used to determine whether the area meets an air quality standard. Below <strong>1.0x</strong> is within the standard.</p>
-<p>A fuller explanation is in the <a href="./index_faq.html">Frequently Asked Questions</a>, and each group’s own tab has a worked example.</p>
+<p>A fuller explanation is in the <a href="./index_methods.html">Frequently Asked Questions</a> on the Data, Methods &amp; FAQ page, and each group’s own page has a worked example.</p>
 </details>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -359,9 +362,9 @@ grid-auto-rows: minmax(0, 1fr);">
 <div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="card side-text bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
-<p>The Clean Air Act names six <strong>criteria pollutants</strong> — common air pollutants regulated under National Ambient Air Quality Standards (NAAQS). Four of them are measured at the eleven TCEQ regulatory monitors within the area of the monitor map: ozone (O₃), fine particles (PM2.5), nitrogen dioxide (NO₂) and sulfur dioxide (SO₂).</p>
-<p>The figure has one panel per pollutant, with every site as a row; a hatched row means that site does not measure that pollutant. Each cell is the site’s <strong>EPA design value</strong> — the statistic EPA uses to judge that pollutant against its standard — divided by the <strong>NAAQS</strong>. Below <strong>1.00x</strong> is within the standard; above <strong>1.00x</strong> is over it. These are single-period values, not EPA’s official three-year determinations. EPA releases this data weeks to months late, so the last three columns say which month they end in.</p>
-<p>How each design value is calculated, the standards used, and a card for every site are on the <a href="./index_bg3_location.html">EPA Criteria Pollutants by Location</a> tab.</p>
+<p>The Clean Air Act names six <strong>criteria pollutants</strong> — common air pollutants regulated under National Ambient Air Quality Standards (NAAQS). Four of them are measured at the eleven TCEQ regulatory monitors within the area of the monitor map: ozone (O₃), fine particles (PM₂.₅), nitrogen dioxide (NO₂) and sulfur dioxide (SO₂).</p>
+<p>The figure has one panel per pollutant, with every site as a row; a hatched row means that site does not measure that pollutant. Each cell is the site’s <strong>EPA design value</strong> — the statistic EPA uses to judge that pollutant against its standard — divided by the <strong>NAAQS</strong>. Below <strong>1.00x</strong> is within the standard; above <strong>1.00x</strong> is over it. Completed years are EPA’s own published single-year values; the most recent columns, which EPA has not published yet, are calculated by CHATTER from EPA’s daily data. None of these are EPA’s official three-year determinations. EPA releases this data weeks to months late, so the last three columns say which month they end in.</p>
+<p>How each design value is calculated, the standards used, and a card for every site are on the <a href="./index_bg3_location.html">EPA Criteria Pollutants by Location</a> page.</p>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CHATTER — Other Health Risks by Pollutants and Location – EDF CHATTER</title>
+<title>CHATTER — Other Health Risks by Pollutants and Location – Houston CHATTER</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">EDF CHATTER</span>
+    <span class="navbar-title">Houston CHATTER</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -104,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text">East Houston</span></a>
+<span class="menu-text">Introduction to the Tool</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index_bg1_location.html"> 
@@ -132,11 +132,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index_methods.html"> 
-<span class="menu-text">Data &amp; Methods</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./index_faq.html"> 
-<span class="menu-text">FAQ</span></a>
+<span class="menu-text">Data, Methods &amp; FAQ</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -186,10 +182,12 @@ ul.task-list li input[type="checkbox"] {
 .card-body img { display: block; height: auto !important; margin: 0 !important; }
 .card-header { padding-top: 0.25rem !important; padding-bottom: 0.25rem !important; }
 .bslib-gap-spacing { gap: 0.4rem !important; }
-/* Slim card naming the map section above each monitor tabset. */
+/* Invisible card that keeps a lone heatmap at half width in the 2-per-row grid. */
+.card-spacer { visibility: hidden !important; }
+/* Slim card naming the map section above each group of cards. */
 .section-banner .card-body { padding: 0.35rem 0.9rem !important; font-size: 1.05rem; }
 </style>
-<div class="bslib-grid-item html-fill-item bslib-grid" data-layout="flow" style="display: grid; grid-template-rows: 230px 64px minmax(3em, 1fr) 64px minmax(3em, 1fr) 64px minmax(3em, 1fr) 64px minmax(3em, 1fr) 64px minmax(3em, 1fr) 64px minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="bslib-grid-item html-fill-item bslib-grid" data-layout="flow" style="display: grid; grid-template-rows: 230px 64px minmax(3em, 1fr) minmax(3em, 1fr) 64px minmax(3em, 1fr) 64px minmax(3em, 1fr) 64px minmax(3em, 1fr) minmax(3em, 1fr) 64px minmax(3em, 1fr) 64px minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card bslib-card html-fill-container" data-title="Other Health Risks — All Pollutants by Location" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
@@ -198,18 +196,18 @@ Other Health Risks — All Pollutants by Location
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <p>Each location card lists <strong>every other-health-risk pollutant</strong> measured at that site, the <strong>health effects</strong> each one is associated with, and its risk over time — the average concentration divided by the screening level. A value below <strong>1.00x</strong> is below the screening level; <strong>1.00x</strong> is the screening level itself. The bottom <strong>Total</strong> row adds those ratios across all pollutants at that site, the same “Total” definition used on the main dashboard.</p>
-<p>CHATTER analyzes air pollutants measured with automatic gas chromatograph (AutoGC) equipment. In Houston, CHATTER follows all <strong>fourteen</strong> hourly AutoGC monitors in Harris County — Clinton, Manchester East Avenue N, Houston Milby Park and Cesar Chavez (<strong>East End</strong>); Galena Park and Pasadena Richey Elementary School (<strong>Galena Park / Pasadena</strong>); HRM-3 Haden Road (<strong>Jacinto City / Cloverleaf</strong>); Channelview, Channelview Drive Water Tower and Lynchburg Ferry (<strong>Channelview / Lynchburg</strong>); HRM-16 Deer Park and Houston Deer Park #2 (<strong>Deer Park</strong>); and Wallisville Road and HRM-7 W Baytown (<strong>Baytown</strong>) — grouped into the six sections of the monitor map. Each section below is a tabbed card: click a monitor’s name to see its heatmap. Hatched gray cells mean no measurement exists for that pollutant in that period.</p>
+<p>CHATTER analyzes air pollutants measured with automatic gas chromatograph (AutoGC) equipment. In Houston, CHATTER follows all <strong>fourteen</strong> hourly AutoGC monitors in Harris County — Clinton, Manchester East Avenue N, Houston Milby Park and Cesar Chavez (<strong>East End</strong>); Galena Park and Pasadena Richey Elementary School (<strong>Galena Park / Pasadena</strong>); HRM-3 Haden Road (<strong>Jacinto City / Cloverleaf</strong>); Channelview, Channelview Drive Water Tower and Lynchburg Ferry (<strong>Channelview / Lynchburg</strong>); HRM-16 Deer Park and Houston Deer Park #2 (<strong>Deer Park</strong>); and Wallisville Road and HRM-7 W Baytown (<strong>Baytown</strong>) — grouped into the six sections of the monitor map. The heatmaps below are grouped by section, two to a row, every monitor at the same size. Hatched gray cells mean no measurement exists for that pollutant in that period.</p>
 <details>
 <summary>
 <strong>How to read this plot</strong> (click to expand)
 </summary>
 <p>Each <strong>row</strong> is an air pollutant, with the health system or target organ it is associated with listed beside it. Each <strong>column</strong> is a period of time. The bottom row, <strong>Total</strong>, adds all the pollutants together for that period. The number in each square is the measured level divided by the EPA screening level, written as a multiple with an “x.”</p>
 <strong>A clarifying example.</strong>
-<p>In the Galena Park / Pasadena section, open the <strong>Galena Park</strong> tab and find the row for <strong>Benzene</strong> and the column for <strong>2024</strong>. The square reads <strong>0.090x</strong>. The health effect listed beside benzene is <em>Immune system</em>, meaning breathing benzene at high enough levels can affect the immune system. The number means the average benzene level in 2024 was about 9% of the screening level — <strong>well below</strong> it. In the same column, the <strong>Total</strong> row reads <strong>0.405x</strong>: adding all thirteen pollutants together, the combined level was about 40% of the screening level.</p>
+<p>In the Galena Park / Pasadena section, find the <strong>Galena Park</strong> heatmap and the row for <strong>Benzene</strong> and the column for <strong>2024</strong>. The square reads <strong>0.090x</strong>. The health effect listed beside benzene is <em>Immune system</em>, meaning breathing benzene at high enough levels can affect the immune system. The number means the average benzene level in 2024 was about 9% of the screening level — <strong>well below</strong> it. In the same column, the <strong>Total</strong> row reads <strong>0.405x</strong>: adding all thirteen pollutants together, the combined level was about 40% of the screening level.</p>
 <img src="figures/examples/bg2poll_example.png" class="img-fluid">
-<p><strong>Most of this tab is below the screening level.</strong> The color scale does not begin to darken until <strong>0.75x</strong>, and almost every value sits far under that, so most of the grid appears in the palest shade. That is the finding, not a rendering problem. The exception is <strong>1,3-butadiene at Houston Milby Park</strong> (East End section), which exceeds the screening level in several periods and lifts that site’s <strong>Total</strong> above <strong>1.0x</strong>. Read the numbers to compare pollutants, sites, and years.</p>
+<p><strong>Most of this page is below the screening level.</strong> The color scale does not begin to darken until <strong>0.75x</strong>, and almost every value sits far under that, so most of the grid appears in the palest shade. That is the finding, not a rendering problem. The exception is <strong>1,3-butadiene at Houston Milby Park</strong> (East End section), which exceeds the screening level in several periods and lifts that site’s <strong>Total</strong> above <strong>1.0x</strong>. Read the numbers to compare pollutants, sites, and years.</p>
 <p><strong>Hatched gray squares</strong> mean the pollutant was not measured in that period — which is different from a low reading, and so is marked differently.</p>
-<p>For a general explanation of heat maps, see the <a href="./index_faq.html">Frequently Asked Questions</a>.</p>
+<p>For a general explanation of heat maps, see the <a href="./index_methods.html">Frequently Asked Questions</a>.</p>
 </details>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -234,36 +232,70 @@ grid-auto-rows: minmax(0, 1fr);">
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-<div class="card tabset bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-header dashboard-card-no-title bslib-navs-card-title">
-
-<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-3"><li class="nav-item" role="presentation"><a href="#card-tabset-3-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Clinton" aria-selected="true" class="nav-link active">Clinton</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-3-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Manchester East Avenue N" aria-selected="false" class="nav-link">Manchester East Avenue N</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-3-3" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Houston Milby Park" aria-selected="false" class="nav-link">Houston Milby Park</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-3-4" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Cesar Chavez" aria-selected="false" class="nav-link">Cesar Chavez</a></li></ul></div>
-
-
-
-
-<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-3"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-3-1"><div class="card-body html-fill-item html-fill-container" data-title="Clinton">
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-title="Clinton" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Clinton
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <img src="index_bg2_pollutants_files/figure-html/cell-5-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
-</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-3-2"><div class="card-body html-fill-item html-fill-container" data-title="Manchester East Avenue N">
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card cell bslib-card html-fill-container" data-title="Manchester East Avenue N" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Manchester East Avenue N
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <img src="index_bg2_pollutants_files/figure-html/cell-6-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
-</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-3-3"><div class="card-body html-fill-item html-fill-container" data-title="Houston Milby Park">
-<div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg2_pollutants_files/figure-html/cell-7-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
-</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-3-4"><div class="card-body html-fill-item html-fill-container" data-title="Cesar Chavez">
-<div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg2_pollutants_files/figure-html/cell-8-output-1.png" class="img-fluid quarto-dashboard-img-contain">
-</div>
-</div></div></div><bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
     <span class="bslib-full-screen-enter badge rounded-pill">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-title="Houston Milby Park" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Houston Milby Park
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<img src="index_bg2_pollutants_files/figure-html/cell-7-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card cell bslib-card html-fill-container" data-title="Cesar Chavez" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Cesar Chavez
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<img src="index_bg2_pollutants_files/figure-html/cell-8-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card section-banner bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
@@ -277,26 +309,38 @@ grid-auto-rows: minmax(0, 1fr);">
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-<div class="card tabset bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-header dashboard-card-no-title bslib-navs-card-title">
-
-<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-5"><li class="nav-item" role="presentation"><a href="#card-tabset-5-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Galena Park" aria-selected="true" class="nav-link active">Galena Park</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Pasadena Richey Elementary School" aria-selected="false" class="nav-link">Pasadena Richey Elementary School</a></li></ul></div>
-
-
-<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-5"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-5-1"><div class="card-body html-fill-item html-fill-container" data-title="Galena Park">
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-title="Galena Park" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Galena Park
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <img src="index_bg2_pollutants_files/figure-html/cell-9-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
-</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-5-2"><div class="card-body html-fill-item html-fill-container" data-title="Pasadena Richey Elementary School">
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card cell bslib-card html-fill-container" data-title="Pasadena Richey Elementary School" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Pasadena Richey Elementary School
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <img src="index_bg2_pollutants_files/figure-html/cell-10-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
-</div></div></div><bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
     <span class="bslib-full-screen-enter badge rounded-pill">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card section-banner bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
@@ -310,21 +354,33 @@ grid-auto-rows: minmax(0, 1fr);">
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-<div class="card tabset bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-header dashboard-card-no-title bslib-navs-card-title">
-
-<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-7"><li class="nav-item" role="presentation"><a href="#card-tabset-7-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="HRM-3 Haden Road" aria-selected="true" class="nav-link active">HRM-3 Haden Road</a></li></ul></div>
-
-<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-7"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-7-1"><div class="card-body html-fill-item html-fill-container" data-title="HRM-3 Haden Road">
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-title="HRM-3 Haden Road" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+HRM-3 Haden Road
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <img src="index_bg2_pollutants_files/figure-html/cell-11-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
-</div></div></div><bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card card-spacer bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body flow">
+&nbsp;
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
     <span class="bslib-full-screen-enter badge rounded-pill">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card section-banner bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
@@ -338,31 +394,65 @@ grid-auto-rows: minmax(0, 1fr);">
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-<div class="card tabset bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-header dashboard-card-no-title bslib-navs-card-title">
-
-<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-9"><li class="nav-item" role="presentation"><a href="#card-tabset-9-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Channelview" aria-selected="true" class="nav-link active">Channelview</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-9-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Channelview Drive Water Tower" aria-selected="false" class="nav-link">Channelview Drive Water Tower</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-9-3" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Lynchburg Ferry" aria-selected="false" class="nav-link">Lynchburg Ferry</a></li></ul></div>
-
-
-
-<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-9"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-9-1"><div class="card-body html-fill-item html-fill-container" data-title="Channelview">
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-title="Channelview" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Channelview
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <img src="index_bg2_pollutants_files/figure-html/cell-12-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
-</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-9-2"><div class="card-body html-fill-item html-fill-container" data-title="Channelview Drive Water Tower">
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card cell bslib-card html-fill-container" data-title="Channelview Drive Water Tower" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Channelview Drive Water Tower
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <img src="index_bg2_pollutants_files/figure-html/cell-13-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
-</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-9-3"><div class="card-body html-fill-item html-fill-container" data-title="Lynchburg Ferry">
-<div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg2_pollutants_files/figure-html/cell-14-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
-</div></div></div><bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
     <span class="bslib-full-screen-enter badge rounded-pill">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-title="Lynchburg Ferry" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Lynchburg Ferry
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<img src="index_bg2_pollutants_files/figure-html/cell-14-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card card-spacer bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body flow">
+&nbsp;
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card section-banner bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
@@ -376,26 +466,38 @@ grid-auto-rows: minmax(0, 1fr);">
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-<div class="card tabset bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-header dashboard-card-no-title bslib-navs-card-title">
-
-<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-11"><li class="nav-item" role="presentation"><a href="#card-tabset-11-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="HRM-16 Deer Park" aria-selected="true" class="nav-link active">HRM-16 Deer Park</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-11-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Houston Deer Park #2" aria-selected="false" class="nav-link">Houston Deer Park #2</a></li></ul></div>
-
-
-<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-11"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-11-1"><div class="card-body html-fill-item html-fill-container" data-title="HRM-16 Deer Park">
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-title="HRM-16 Deer Park" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+HRM-16 Deer Park
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <img src="index_bg2_pollutants_files/figure-html/cell-15-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
-</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-11-2"><div class="card-body html-fill-item html-fill-container" data-title="Houston Deer Park #2">
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card cell bslib-card html-fill-container" data-title="Houston Deer Park #2" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Houston Deer Park #2
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <img src="index_bg2_pollutants_files/figure-html/cell-16-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
-</div></div></div><bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
     <span class="bslib-full-screen-enter badge rounded-pill">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card section-banner bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
@@ -409,34 +511,40 @@ grid-auto-rows: minmax(0, 1fr);">
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-<div class="card tabset bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-header dashboard-card-no-title bslib-navs-card-title">
-
-<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-13"><li class="nav-item" role="presentation"><a href="#card-tabset-13-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Wallisville Road" aria-selected="true" class="nav-link active">Wallisville Road</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-13-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="HRM-7 W Baytown" aria-selected="false" class="nav-link">HRM-7 W Baytown</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-13-3" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Tab 3" aria-selected="false" class="nav-link">Tab 3</a></li></ul></div>
-
-
-
-
-
-<div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden">
-
-</div>
-<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-13"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-13-1"><div class="card-body html-fill-item html-fill-container" data-title="Wallisville Road">
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-title="Wallisville Road" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Wallisville Road
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <img src="index_bg2_pollutants_files/figure-html/cell-17-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
-</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-13-2"><div class="card-body html-fill-item html-fill-container" data-title="HRM-7 W Baytown">
-<div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg2_pollutants_files/figure-html/cell-18-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
-</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-13-3"><div class="card-body html-fill-item html-fill-container flow">
-<!-- END generated cards -->
-</div></div></div><bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
     <span class="bslib-full-screen-enter badge rounded-pill">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card cell bslib-card html-fill-container" data-title="HRM-7 W Baytown" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+HRM-7 W Baytown
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<img src="index_bg2_pollutants_files/figure-html/cell-18-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><!-- END generated cards --><div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden">
+
+</div>
+</div>
 </div>
 
 
