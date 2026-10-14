@@ -203,13 +203,21 @@ ul.task-list li input[type="checkbox"] {
 .methods-downloads a[href^="downloads/"]:hover { background: #e3e8f5; }
 details.methods-tech summary { cursor: pointer; font-weight: 600; color: #1a3a8f; }
 details.methods-tech { margin-top: 0.3rem; }
+
+/* Credits: partner logos in a row, then the attribution text. */
+.credit-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 2.2rem; margin: 0.4rem 0 1rem 0; }
+.credit-logo { display: inline-flex; align-items: center; gap: 0.6rem; }
+.credit-logo img { height: 56px !important; width: auto !important; display: inline-block !important; }
+.credit-name { font-weight: 700; color: #1a3a8f; font-size: 1.05rem; }
+.credits-body { max-width: 62rem; font-size: 0.92rem; }
+.credits-body p { margin-bottom: 0.6rem; line-height: 1.5; }
 </style>
 <!-- This page has no computation.  The two files it links are written by
      scripts/export_downloads.py (part of the refresh sequence) into downloads/,
      which _quarto.yml lists under `resources` so they are copied into _site/.
      The prose lives in _text/methods_*.md, like every other page, and the
      report includes the same files. -->
-<div class="bslib-grid-item html-fill-item bslib-grid" data-layout="flow" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="bslib-grid-item html-fill-item bslib-grid" data-layout="flow" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card bslib-card html-fill-container" data-title="Where the numbers come from, and how they are calculated" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
@@ -448,6 +456,34 @@ Frequently Asked Questions
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card bslib-card html-fill-container" data-title="About this project" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+About this project
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
+<div class="credits-body html-fill-item html-fill-container">
+<div class="credit-logos html-fill-item html-fill-container">
+  <span class="credit-logo"><img src="figures/logos/statanalytics_idd.png" alt="StatAnalytics IDD, LLC logo"><span class="credit-name">StatAnalytics IDD, LLC</span></span>
+  <span class="credit-logo"><img src="figures/logos/edf.png" alt="Environmental Defense Fund logo"></span>
+  <span class="credit-logo"><img src="figures/logos/hhd.png" alt="Houston Health Department logo"></span>
+</div>
+
+<p><strong>Houston CHATTER</strong> (Community Health Air Toxics Tracking &amp; Environmental Report) was developed by <strong>StatAnalytics IDD, LLC</strong> in collaboration with <strong>Environmental Defense Fund (EDF)</strong> and the <strong>Houston Health Department (HHD)</strong>, with support from grant funding.</p>
+<p><strong>Data sources.</strong> Texas Commission on Environmental Quality (TCEQ) AutoGC monitors; U.S. EPA Air Quality System (AQS) and EPA Air Quality Design Values; screening levels from EPA Regional Screening Levels (RSLs); health effects from EPA’s Integrated Risk Information System (IRIS). Full citations are on the <a href="https://statanalyticsidd-gh.github.io/East-Houston/index_methods.html">Data, Methods &amp; FAQ</a> page of the website.</p>
+<p><strong>Disclaimer.</strong> CHATTER values are screening comparisons for public information. They are not regulatory determinations, and exceeding a screening level or standard does not by itself mean that health effects will occur.</p>
+<p><strong>License.</strong> © 2026 StatAnalytics IDD, LLC. Content on this site and in the CHATTER report is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</a>: you may share and adapt it with credit, but not for commercial purposes. For other uses, contact StatAnalytics IDD, LLC. The monitor map (courtesy of the Houston Health Department), the embedded EDF Air Tracker (© Environmental Defense Fund) and the partner logos are not covered by this license.</p>
+<p><strong>Suggested citation.</strong> StatAnalytics IDD, LLC, Environmental Defense Fund, and Houston Health Department (2026). <em>Houston CHATTER: Community Health Air Toxics Tracking &amp; Environmental Report.</em> https://statanalyticsidd-gh.github.io/East-Houston/</p>
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -863,6 +899,19 @@ Frequently Asked Questions
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 StatAnalytics IDD, LLC, with Environmental Defense Fund and the Houston Health Department · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> · not for commercial use</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 <script type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (_event) {
