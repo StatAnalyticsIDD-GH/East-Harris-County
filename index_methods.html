@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CHATTER — Data, Methods &amp; FAQ – East Harris County CHATTER</title>
+<title>CHATTER — Data, Methods &amp; FAQ – Houston and Harris County CHATTER</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">East Harris County CHATTER</span>
+    <span class="navbar-title">Houston and Harris County CHATTER</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -273,7 +273,7 @@ Download the data
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="methods-body methods-downloads html-fill-item html-fill-container">
-<p><strong>Every value on this site, in one file.</strong> <a href="downloads/CHATTER_EastHarrisCounty_values.csv"><code>CHATTER_EastHarrisCounty_values.csv</code></a> holds one row for every heatmap cell — monitor, pollutant (or health effect, or total), and period — together with the summary statistics it was computed from. It is regenerated from the same code that draws the pages, so a row in the file cannot disagree with a cell on the site. It opens in Excel, R or Python.</p>
+<p><strong>Every value on this site, in one file.</strong> <a href="downloads/CHATTER_HoustonHarrisCounty_values.csv"><code>CHATTER_HoustonHarrisCounty_values.csv</code></a> holds one row for every heatmap cell — monitor, pollutant (or health effect, or total), and period — together with the summary statistics it was computed from. It is regenerated from the same code that draws the pages, so a row in the file cannot disagree with a cell on the site. It opens in Excel, R or Python.</p>
 <p>Each row carries the group (Cancer Risk, Other Health Risks, EPA Criteria Pollutants), the monitor and its AQS site number, the county, the period and its calendar bounds, and <code>value_shown</code>, the number in the cell. For AutoGC pollutants it adds the mean concentration in ppb, the screening level it was divided by, the number of valid hourly readings behind the mean (for the monthly column, the readings summed over the weeks averaged and how many weeks there were), the completeness and whether the cell carries the asterisk. For criteria pollutants it adds the design value in the standard’s own units, the standard, and the statistic used. Totals are marked as such and carry the displayed sum and the lowest completeness among the cells summed.</p>
 <p><strong>How each statistic is defined.</strong> <a href="downloads/CHATTER_statistics_documentation.xlsx"><code>CHATTER_statistics_documentation.xlsx</code></a> is the reference sheet: every statistic that appears on the site, its formula, and where in the code it is computed.</p>
 </div>
@@ -475,11 +475,11 @@ About this project
   <img src="figures/logos/partner_logos.png" alt="Logos: StatAnalytics IDD, LLC; Environmental Defense Fund; Houston Health Department">
 </div>
 
-<p><strong>East Harris County CHATTER</strong> (Community Health Air Toxics Tracking &amp; Environmental Report) was developed by <strong>StatAnalytics IDD, LLC</strong> in collaboration with <strong>Environmental Defense Fund (EDF)</strong> and the <strong>Houston Health Department (HHD)</strong>, with support from grant funding.</p>
-<p><strong>Data sources.</strong> Texas Commission on Environmental Quality (TCEQ) AutoGC monitors; U.S. EPA Air Quality System (AQS) and EPA Air Quality Design Values; screening levels from EPA Regional Screening Levels (RSLs); health effects from EPA’s Integrated Risk Information System (IRIS). Full citations are on the <a href="https://statanalyticsidd-gh.github.io/East-Harris-County/index_methods.html">Data, Methods &amp; FAQ</a> page of the website.</p>
+<p><strong>Houston and Harris County CHATTER</strong> (Community Health Air Toxics Tracking &amp; Environmental Report) was developed by <strong>StatAnalytics IDD, LLC</strong> in collaboration with <strong>Environmental Defense Fund (EDF)</strong> and the <strong>Houston Health Department (HHD)</strong>, with support from grant funding.</p>
+<p><strong>Data sources.</strong> Texas Commission on Environmental Quality (TCEQ) AutoGC monitors; U.S. EPA Air Quality System (AQS) and EPA Air Quality Design Values; screening levels from EPA Regional Screening Levels (RSLs); health effects from EPA’s Integrated Risk Information System (IRIS). Full citations are on the <a href="https://statanalyticsidd-gh.github.io/Houston-Harris-County/index_methods.html">Data, Methods &amp; FAQ</a> page of the website.</p>
 <p><strong>Disclaimer.</strong> CHATTER values are screening comparisons for public information. They are not regulatory determinations, and exceeding a screening level or standard does not by itself mean that health effects will occur.</p>
 <p><strong>License.</strong> © 2026 StatAnalytics IDD, LLC. Content on this site and in the CHATTER report is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</a>: you may share and adapt it with credit, but not for commercial purposes. For other uses, contact StatAnalytics IDD, LLC. The map’s section grid follows the Houston Health Department’s monitor map. The embedded EDF Air Tracker (© Environmental Defense Fund) and the partner logos are not covered by this license.</p>
-<p><strong>Suggested citation.</strong> StatAnalytics IDD, LLC, Environmental Defense Fund, and Houston Health Department (2026). <em>East Harris County CHATTER: Community Health Air Toxics Tracking &amp; Environmental Report.</em> https://statanalyticsidd-gh.github.io/East-Harris-County/</p>
+<p><strong>Suggested citation.</strong> StatAnalytics IDD, LLC, Environmental Defense Fund, and Houston Health Department (2026). <em>Houston and Harris County CHATTER: Community Health Air Toxics Tracking &amp; Environmental Report.</em> https://statanalyticsidd-gh.github.io/Houston-Harris-County/</p>
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -567,7 +567,7 @@ About this project
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/statanalyticsidd-gh\.github\.io\/East-Harris-County\/");
+        var filterRegex = new RegExp("https:\/\/statanalyticsidd-gh\.github\.io\/Houston-Harris-County\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
