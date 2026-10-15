@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -80,9 +80,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 </head>
@@ -202,20 +199,6 @@ ul.task-list li input[type="checkbox"] {
 .credit-logos img { display: inline-block !important; width: 100% !important; max-width: 760px !important; height: auto !important; }
 .credits-body { max-width: 62rem; font-size: 0.92rem; }
 .credits-body p { margin-bottom: 0.6rem; line-height: 1.5; }
-/* Emissions inventory tables (scripts/emissions_inventory.py). */
-.ei-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 0.3rem 0 0.6rem 0; }
-.ei-table caption { caption-side: top; text-align: left; font-weight: 600; color: #222; padding-bottom: 0.3rem; }
-.ei-table + .ei-table { margin-top: 1rem; }
-.ei-table.ei-compact { font-size: 0.84rem; line-height: 1.25; }
-.ei-table.ei-compact td, .ei-table.ei-compact th { padding: 0.12rem 0.45rem; }
-.ei-table.ei-compact td { white-space: nowrap; }
-.ei-table.ei-compact td:nth-child(3) { white-space: normal; }
-.ei-table th { text-align: left; border-bottom: 2px solid #999; padding: 0.25rem 0.5rem; font-weight: 600; }
-.ei-table td { border-bottom: 1px solid #e3e3e3; padding: 0.25rem 0.5rem; vertical-align: top; }
-.ei-table .ei-num { text-align: right; font-variant-numeric: tabular-nums; }
-.ei-table td.ei-sec { text-align: center; font-weight: 700; }
-.ei-table .ei-co { color: #555; font-size: 0.82rem; }
-.ei-table tr.ei-total td { border-top: 2px solid #999; font-weight: 600; }
 </style>
 <div class="bslib-grid-item html-fill-item bslib-grid" data-layout="flow" style="display: grid; grid-template-rows: minmax(3em, max-content) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
@@ -408,251 +391,24 @@ grid-auto-rows: minmax(0, 1fr);">
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
 </div>
-<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 22fr) minmax(3em, 78fr);
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
-<div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
-<div class="card side-text bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card bslib-card html-fill-container" data-title="Houston and Harris County Emissions Inventory" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Houston and Harris County Emissions Inventory
+</span></div></div>
 <div class="card-body html-fill-item html-fill-container">
-<p>The monitors measure what is in the air; this section shows <strong>where some of it may come from</strong>. The red dots on the monitor map are the 193 industrial facilities in the map area that reported emitting at least one CHATTER air toxic to EPA’s <a href="https://www.epa.gov/air-emissions-inventories/2020-national-emissions-inventory-nei-data">National Emissions Inventory (NEI)</a> for 2020, compiled for CHATTER by the Houston Health Department.</p>
-<p>The bar chart adds up those reported emissions, in <strong>tons per year</strong>, for each lettered section of the map; the tables below it give the numbers behind the chart and list the ten largest sources.</p>
-<p><strong>Emissions are not the same as exposure.</strong> How much reaches a neighborhood depends on wind, distance, stack height and weather. The list also covers only the facilities’ reported yearly emissions, not traffic, ships or other sources. Section H, the south-east corner of the map, has facilities but no CHATTER monitor.</p>
-<p>The full facility list is available as a <a href="downloads/CHATTER_HoustonHarrisCounty_emissions_NEI2020.csv">download (CSV)</a>.</p>
-</div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-</div><div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
-<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-body html-fill-item html-fill-container">
-<div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_files/figure-html/ei-figure-output-1.png" id="ei-figure" class="img-fluid quarto-dashboard-img-contain">
-</div>
-</div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-body html-fill-item html-fill-container">
-<div id="ei-tables" class="cell-output cell-output-display html-fill-item html-fill-container">
-<table class="ei-table caption-top table table-sm table-striped small">
-<caption>The numbers behind the chart: reported emissions by map section and pollutant (tons per year)</caption>
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Map section</th>
-<th class="ei-num" data-quarto-table-cell-role="th">Facilities</th>
-<th class="ei-num" data-quarto-table-cell-role="th">Total</th>
-<th class="ei-num" data-quarto-table-cell-role="th">Benzene</th>
-<th class="ei-num" data-quarto-table-cell-role="th">1,3-Butadiene</th>
-<th class="ei-num" data-quarto-table-cell-role="th">Hexane</th>
-<th class="ei-num" data-quarto-table-cell-role="th">Toluene</th>
-<th class="ei-num" data-quarto-table-cell-role="th">Xylenes</th>
-<th class="ei-num" data-quarto-table-cell-role="th">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>A · Fifth Ward / Pleasantville</td>
-<td class="ei-num">21</td>
-<td class="ei-num"><strong>18.0</strong></td>
-<td class="ei-num">2.0</td>
-<td class="ei-num">0.0</td>
-<td class="ei-num">6.1</td>
-<td class="ei-num">1.8</td>
-<td class="ei-num">4.2</td>
-<td class="ei-num">3.9</td>
-</tr>
-<tr class="even">
-<td>B · Jacinto City / Cloverleaf</td>
-<td class="ei-num">13</td>
-<td class="ei-num"><strong>88.6</strong></td>
-<td class="ei-num">4.7</td>
-<td class="ei-num">6.7</td>
-<td class="ei-num">57.1</td>
-<td class="ei-num">14.4</td>
-<td class="ei-num">4.5</td>
-<td class="ei-num">1.2</td>
-</tr>
-<tr class="odd">
-<td>C · Channelview / Lynchburg</td>
-<td class="ei-num">23</td>
-<td class="ei-num"><strong>287.5</strong></td>
-<td class="ei-num">55.0</td>
-<td class="ei-num">85.0</td>
-<td class="ei-num">23.3</td>
-<td class="ei-num">19.3</td>
-<td class="ei-num">27.8</td>
-<td class="ei-num">77.1</td>
-</tr>
-<tr class="even">
-<td>D · Baytown</td>
-<td class="ei-num">11</td>
-<td class="ei-num"><strong>217.5</strong></td>
-<td class="ei-num">18.5</td>
-<td class="ei-num">26.2</td>
-<td class="ei-num">70.2</td>
-<td class="ei-num">21.4</td>
-<td class="ei-num">72.1</td>
-<td class="ei-num">9.1</td>
-</tr>
-<tr class="odd">
-<td>E · East End</td>
-<td class="ei-num">18</td>
-<td class="ei-num"><strong>106.9</strong></td>
-<td class="ei-num">2.9</td>
-<td class="ei-num">24.7</td>
-<td class="ei-num">9.7</td>
-<td class="ei-num">4.9</td>
-<td class="ei-num">10.1</td>
-<td class="ei-num">54.7</td>
-</tr>
-<tr class="even">
-<td>F · Galena Park / Pasadena</td>
-<td class="ei-num">35</td>
-<td class="ei-num"><strong>149.8</strong></td>
-<td class="ei-num">27.9</td>
-<td class="ei-num">3.9</td>
-<td class="ei-num">71.5</td>
-<td class="ei-num">20.9</td>
-<td class="ei-num">21.6</td>
-<td class="ei-num">4.0</td>
-</tr>
-<tr class="odd">
-<td>G · Deer Park</td>
-<td class="ei-num">38</td>
-<td class="ei-num"><strong>211.7</strong></td>
-<td class="ei-num">36.2</td>
-<td class="ei-num">20.0</td>
-<td class="ei-num">44.9</td>
-<td class="ei-num">34.1</td>
-<td class="ei-num">17.7</td>
-<td class="ei-num">58.8</td>
-</tr>
-<tr class="even">
-<td>H · (no CHATTER monitor)</td>
-<td class="ei-num">34</td>
-<td class="ei-num"><strong>266.2</strong></td>
-<td class="ei-num">19.2</td>
-<td class="ei-num">7.6</td>
-<td class="ei-num">46.9</td>
-<td class="ei-num">115.9</td>
-<td class="ei-num">64.6</td>
-<td class="ei-num">12.0</td>
-</tr>
-<tr class="ei-total odd">
-<td>All sections</td>
-<td class="ei-num">193</td>
-<td class="ei-num"><strong>1,346.3</strong></td>
-<td class="ei-num">166.4</td>
-<td class="ei-num">174.3</td>
-<td class="ei-num">329.7</td>
-<td class="ei-num">232.7</td>
-<td class="ei-num">222.6</td>
-<td class="ei-num">220.7</td>
-</tr>
-</tbody>
-</table>
-<table class="ei-table ei-compact caption-top table table-sm table-striped small">
-<caption>The 10 largest reported sources of CHATTER pollutants (71% of the 1,346 tons per year from all 193 facilities)</caption>
-<thead>
-<tr class="header">
-<th class="ei-num" data-quarto-table-cell-role="th">#</th>
-<th class="ei-sec" data-quarto-table-cell-role="th">Section</th>
-<th data-quarto-table-cell-role="th">Facility · company</th>
-<th data-quarto-table-cell-role="th">Industry</th>
-<th class="ei-num" data-quarto-table-cell-role="th">Tons/yr</th>
-<th data-quarto-table-cell-role="th">Largest pollutant</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td class="ei-num">1</td>
-<td class="ei-sec">H</td>
-<td><strong>Baytown Refinery</strong> <span class="ei-co">· Exxon Mobil</span></td>
-<td>Petroleum Refineries</td>
-<td class="ei-num">217.5</td>
-<td>Toluene (42%)</td>
-</tr>
-<tr class="even">
-<td class="ei-num">2</td>
-<td class="ei-sec">D</td>
-<td><strong>Baytown Chemical Plant</strong> <span class="ei-co">· Exxon Mobil</span></td>
-<td>Petrochemical Manufacturing</td>
-<td class="ei-num">158.9</td>
-<td>Hexane (42%)</td>
-</tr>
-<tr class="odd">
-<td class="ei-num">3</td>
-<td class="ei-sec">C</td>
-<td><strong>Channelview Complex</strong> <span class="ei-co">· Equistar Chemicals</span></td>
-<td>Petrochemical Manufacturing</td>
-<td class="ei-num">125.0</td>
-<td>1,3-Butadiene (68%)</td>
-</tr>
-<tr class="even">
-<td class="ei-num">4</td>
-<td class="ei-sec">G</td>
-<td><strong>Deer Park Chemicals</strong> <span class="ei-co">· Shell Chemical</span></td>
-<td>Petroleum Refineries</td>
-<td class="ei-num">112.9</td>
-<td>Cumene (32%)</td>
-</tr>
-<tr class="odd">
-<td class="ei-num">5</td>
-<td class="ei-sec">C</td>
-<td><strong>Channelview Plant</strong> <span class="ei-co">· Lyondell Chemical</span></td>
-<td>Petrochemical Manufacturing</td>
-<td class="ei-num">76.5</td>
-<td>Ethylbenzene (39%)</td>
-</tr>
-<tr class="even">
-<td class="ei-num">6</td>
-<td class="ei-sec">B</td>
-<td><strong>Galena Park Terminal</strong> <span class="ei-co">· Magellan Terminals</span></td>
-<td>General Warehousing and Storage</td>
-<td class="ei-num">72.3</td>
-<td>Hexane (73%)</td>
-</tr>
-<tr class="odd">
-<td class="ei-num">7</td>
-<td class="ei-sec">E</td>
-<td><strong>Houston Chemical Plant</strong> <span class="ei-co">· Goodyear Tire &amp; Rubber</span></td>
-<td>Synthetic Rubber Manufacturing</td>
-<td class="ei-num">68.0</td>
-<td>Styrene (76%)</td>
-</tr>
-<tr class="even">
-<td class="ei-num">8</td>
-<td class="ei-sec">D</td>
-<td><strong>Baytown Olefins Plant</strong> <span class="ei-co">· Exxon Mobil</span></td>
-<td>Petrochemical Manufacturing</td>
-<td class="ei-num">52.2</td>
-<td>1,3-Butadiene (43%)</td>
-</tr>
-<tr class="odd">
-<td class="ei-num">9</td>
-<td class="ei-sec">F</td>
-<td><strong>Houston Refining</strong> <span class="ei-co">· Houston Refining</span></td>
-<td>Petroleum Refineries</td>
-<td class="ei-num">44.1</td>
-<td>Hexane (33%)</td>
-</tr>
-<tr class="even">
-<td class="ei-num">10</td>
-<td class="ei-sec">F</td>
-<td><strong>Pasadena Plastics Complex</strong> <span class="ei-co">· Chevron Phillips Chemical</span></td>
-<td>Plastics Material and Resin Manufacturing</td>
-<td class="ei-num">27.4</td>
-<td>Hexane (94%)</td>
-</tr>
-</tbody>
-</table>
-<p style="font-size:0.82rem;color:#555;margin:0">Source: EPA National Emissions Inventory 2020 (point sources), compiled by the Houston Health Department. Map sections as assigned by HHD. Largest pollutant: the CHATTER pollutant with the most reported emissions at that facility, and its share of the facility's total.</p>
+<div class="credits-body html-fill-item html-fill-container">
+<!-- PLACEHOLDER (2026-10-15): the Houston and Harris County Emissions Inventory
+     website is not built yet.  When it is published, replace the two lines
+     marked "coming soon" below with a link, e.g.
+       **[Visit the Houston and Harris County Emissions Inventory website →](https://statanalyticsidd-gh.github.io/<REPO>/)**
+     and uncomment its entry in the navbar in _quarto.yml.  The section that
+     used to sit here (chart + tables) is saved in backups/emissions_section_20261015/
+     and its code is still in scripts/emissions_inventory.py. -->
+<p>The monitors measure what is in the air. The red dots on the monitor map above are industrial facilities in the map area that reported emitting CHATTER pollutants to EPA’s <a href="https://www.epa.gov/air-emissions-inventories/2020-national-emissions-inventory-nei-data">National Emissions Inventory</a> (2020), compiled by the Houston Health Department.</p>
+<p>Which facilities those are, how much each reports, and how emissions compare across the lettered map sections will be presented on a companion website, the <strong>Houston and Harris County Emissions Inventory</strong>.</p>
+<strong>Houston and Harris County Emissions Inventory website — coming soon.</strong>
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -661,7 +417,6 @@ grid-auto-rows: minmax(0, 1fr);">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-</div>
 </div>
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
